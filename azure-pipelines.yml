@@ -25,5 +25,6 @@ steps:
 - script: composer install --no-interaction --prefer-dist
   displayName: 'composer install'
 
-- script: ./vendor/bin/phpunit SlugTest.php
+- script: | 
+    vendor/bin/phpunit SlugTest.php
   displayName: 'Run tests with phpunit'
